@@ -12,7 +12,7 @@ const ProductList = ({ category }) => {
     const fetchProducts = async () => {
       try {
         const url = category 
-          ? `/api/products?category=${category}`
+          ? `/api/${category}`
           : '/api/products';
         const response = await axios.get(url);
         setProducts(response.data);

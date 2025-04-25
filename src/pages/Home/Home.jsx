@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ProductList from '../../components/Productlisting';
+import electroimage from "./assets/electronics.jpg"
 
 const Home = () => {
   return (
@@ -18,12 +19,13 @@ const Home = () => {
       <Paper 
         elevation={0}
         sx={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
+          backgroundImage: `url(${electroimage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'common.white',
           py: 10,
           textAlign: 'center',
+
           mb: 4
         }}
       >
@@ -76,6 +78,7 @@ const Home = () => {
                 }}
               >
                 {category}
+                {<ProductList category={category}/>}
               </Button>
             </Grid>
           ))}
