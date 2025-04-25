@@ -2,13 +2,13 @@
 import React from 'react';
 import { Container, Grid, Typography, Link } from '@mui/material';
 import { Facebook, Twitter, Instagram, LinkedIn } from '@mui/icons-material';
-import useStyles from './Footer.styles';
+import {FooterContainer,SocialIcons,Icon,Copyright} from './Footer.styles';
 
 const Footer = () => {
-  const classes = useStyles();
+  
 
   return (
-    <footer className={classes.footer}>
+    <footer className={FooterContainer}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
@@ -18,17 +18,17 @@ const Footer = () => {
             <Typography variant="body2">
               Your one-stop shop for all electronics needs.
             </Typography>
-            <div className={classes.socialIcons}>
-              <Link href="#" className={classes.icon}>
+            <div className={SocialIcons}>
+              <Link href="#" className={Icon}>
                 <Facebook />
               </Link>
-              <Link href="#" className={classes.icon}>
+              <Link href="#" className={Icon}>
                 <Twitter />
               </Link>
-              <Link href="#" className={classes.icon}>
+              <Link href="#" className={Icon}>
                 <Instagram />
               </Link>
-              <Link href="#" className={classes.icon}>
+              <Link href="#" className={Icon}>
                 <LinkedIn />
               </Link>
             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
             </Link>
           </Grid>
         </Grid>
-        <Typography variant="body2" align="center" className={classes.copyright}>
+        <Typography variant="body2" align="center" className={Copyright}>
           © {new Date().getFullYear()} ElectroShop. All rights reserved.
         </Typography>
       </Container>
