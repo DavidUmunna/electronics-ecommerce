@@ -1,5 +1,5 @@
 // src/components/Checkout/Checkout.js
-import React, { useContext, useState } from 'react';
+import React, {  useState } from 'react';
 import { useCart } from '../context/Cartcontext';
 import { TextField, Button, Paper, Typography, Stepper, Step, StepLabel, Grid } from '@mui/material';
 

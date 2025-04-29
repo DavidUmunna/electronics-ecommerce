@@ -1,7 +1,7 @@
 // src/components/Auth/Account.js
 import React, { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
-import { TextField, Button, Paper, Typography, Tabs, Tab, Box } from '@mui/material';
+import { TextField, Button, Paper,Tabs, Tab, Box } from '@mui/material';
 
 const Account = () => {
   const [activeTab, setActiveTab] = useState(0);
